@@ -1,0 +1,453 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0%;
+    text-align: center;
+    font-family: 'Nuosu SIL', serif;
+}
+p{
+    font-size: 25px;
+}
+h2{
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+.dotted-hr{
+    border: 5px solid rgb(255, 255, 255);
+    border-style: dotted;
+    border-bottom: none;
+    width: 150px;
+    margin: 0% auto;
+    margin-top: -1.5%;
+}
+/* header site start */
+.header{
+    background-color: #010753;
+}
+.logos .logo{
+    width: 120px;
+    height: 100px;
+    border-radius: 10px;
+    margin: 30px 20px ;
+    border: 2px solid rgba(248, 0, 0, 0.489);
+
+}
+.logos .logo:hover{
+    box-shadow: 2px 2px 2px white;
+}
+
+.header-title h1{
+    color: white;
+    padding: 20px 0px;
+    font-size: 2.5rem;
+    margin-top: 0px;
+}
+.contact-link{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    margin-top: -30px;
+    text-transform: uppercase;
+}
+.contact-link a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    background-color: rgba(100, 7, 193, 0.4);
+    margin-top: 10px;
+    border-radius: 10px;
+    font-size: 17px;
+}
+.contact-link a:hover{
+    background-color: rgba(128, 128, 128, 0.678);
+    color: rgb(0, 255, 51);
+}
+
+[class*="col-"]{
+    float: left;
+    padding: 10;
+}
+
+[class*="col-"]{
+    width: 100%;
+}
+.header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+/* header site ends */
+
+/* Animation part starts */
+.animation{
+    padding: 100px 20px ;
+    position: relative;
+}
+.animation .first-ani{
+    position: absolute;
+    right: 20px;
+    height: 150px;
+    width: 150px;
+    top: 10px ;
+    transition: 2s;
+}
+.animation .first-ani:hover{
+    transform: rotate(360deg);
+}
+.description{
+    text-align: center;
+}
+.description h1{
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-family: 'Fascinate Inline', cursive;
+    margin-bottom: 0%;
+}
+.description p{
+    padding: 10px;
+    background-color: transparent;
+}
+
+.animation .second-ani{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    bottom: 10px;
+    left:20px;
+    transition: 2s;
+}
+.animation .second-ani:hover{
+    transform: rotate(360deg);
+}
+.animation::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+/* Animation part starts */
+
+/* my profile starts */
+.my-profile{
+    background-color: #00949c;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+}
+.about-me{
+    text-align: center;
+    margin-top: 2%;
+}
+.profile img{
+    height: 220px;
+    width: 200px;
+    border-radius: 50%;
+    margin: 50px;
+}
+.my-title{
+    padding: 0px 30px ;
+}
+.my-title h2{
+    color: rgb(255, 145, 0);
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+.my-title p,a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+.download{
+    background-color: #94006c;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+.download:hover{
+    background-color: grey;
+}
+.my-profile::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+/* my profile ends */
+
+/* skill details start */
+.skill-card-container{
+    margin: 10px;
+}
+.card{
+    background-color: #a39e9c; 
+    height: 630px;
+    margin: 10px 10px ;
+    box-shadow: 3px 5px 5px rgb(0, 0, 0);
+    padding: 10px;
+}
+.icon-png img{
+    height: 80px;
+    width: 80px;
+    border: 2px solid white ;
+    padding: 10px;
+    border-radius: 50%;
+    margin-top: 20px;
+    transition: 1.5s;
+}
+.icon-png img:hover{
+    transform: rotate(360deg);
+}
+.title{
+    padding: 0px 10px;
+}
+.title h2{
+    background-color: rgb(0, 0, 0) ;
+    color: antiquewhite;
+    border-radius: 3px;
+    font-size: 2rem;
+}
+.description li{
+    text-align: left;
+}
+.card:hover{
+    box-shadow: 0px 4px 8px 5px black;
+}
+.description-skill{
+    padding: 0px 10px;
+}
+.description-skill li{
+    list-style-type: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: left;
+    margin: 22px 0;
+    margin-right: 30px;
+    position: relative;
+}
+
+.description-skill li::before{
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0%;
+    background-color: #eadada7f;
+    width: 100%;
+    height: 12px;
+    border-radius: 1000px;
+}
+.description-skill li::after{
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0%;
+    background-color: #0d23eaad;
+    width: 0%;
+    height: 12px;
+    border-radius: 1000px;
+}
+.description-skill li.html::after{
+    animation-name: html;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+@keyframes html {
+    to{
+        width:90%;
+        background-color: rgba(255, 0, 0, 0.799);
+    }   
+}
+.description-skill li.css::after{
+    animation-name: css;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+@keyframes css {
+    to{
+        width:95%;
+        background-color: rgb(0, 68, 255);
+    }
+}
+.description-skill li.bootstrap::after{
+    animation-name: bootstrap;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+@keyframes bootstrap {
+    to{
+        width:80%;
+        background-color: rgb(21, 255, 76);
+    }
+}
+.description-skill li.javascript::after{
+    animation-name: javascript;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+@keyframes javascript {
+    to{
+        width:92%;
+        background-color: rgb(255, 0, 208);
+    }
+}
+.description-skill li.jquery::after{
+    animation-name: jquery;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+@keyframes jquery {
+    to{
+        width:87%;
+        background-color: rgb(21, 239, 255);
+    }
+}
+.description-skill li.node::after{
+    animation-name: node;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+@keyframes node {
+    to{
+        width:89%;
+        background-color: rgba(255, 234, 0, 0.71);
+    }
+}
+.description-skill li.express::after{
+    animation-name: express;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+@keyframes express {
+    to{
+        width:93%;
+        background-color: rgba(0, 0, 0, 0.792);
+    }
+}
+.description-skill li.github::after{
+    animation-name: github;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+@keyframes github {
+    to{
+        width:86%;
+        background-color: rgb(21, 83, 255);
+    }
+}
+.description-skill li.react::after{
+    animation-name: react;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+@keyframes react {
+    to{
+        width:92%;
+        background-color: rgb(38, 113, 37);
+    }
+}
+.skill-card-container::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+/* skill details end */
+
+/* conrtact information starts */
+.contact-information{
+    background-color:teal ;
+    padding: 0px 10px;
+}
+
+.achievement-list li{
+    text-align: justify;
+    padding: 5px;
+}
+.dotted{
+    border: 5px solid rgb(255, 255, 255);
+    border-style: dotted;
+    border-bottom: none;
+    width: 150px;
+    margin: 0% auto;
+    margin-top: -4%;
+}
+.input-info{
+    padding: 10px;
+}
+form input, textarea{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    margin: 5px 0;
+    border-radius: 5px;
+    resize: none;
+    text-align: center;
+    
+    font-size: 1rem;
+}
+form button{
+    background-color: #0f009a;
+    color: white;
+    padding: 4px 20px;
+    border-radius: 3px;
+    margin: 0 4px;
+}
+
+form button:hover{
+    background-color: grey;
+    cursor: pointer;
+}
+
+.icon-button{
+    padding: 40px;
+}
+.icon-button .btn{
+    border: none;
+    font-size: 2.3rem;
+    border-radius: 20px;
+    margin: 5px;
+}
+.btn:hover{
+    background-color: grey;
+}
+.contact-information::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+/* conrtact information ends */
+
+/* footer starts */
+.footer{
+    padding: 20px;
+    background-color: black;
+    text-align: center;
+    color: aliceblue;
+}
+.links a{
+    color: rgb(255, 145, 0);
+    line-height: 40px;
+    display: block;
+    font-size: 1rem;
+    width: fit-content;
+    margin: 0% auto;
+}
+.links a:hover{
+color: blue;
+}
+
+.copyright{
+    text-align: center;
+    padding: 50px;
+}
+.footer::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+/* footer ends */

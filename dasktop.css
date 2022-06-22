@@ -1,0 +1,119 @@
+p{
+    background-color: chartreuse;
+}
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* header site start */
+.header-title{
+    text-align: right;
+}
+.contact-link{
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 10px 40px ;
+    margin: 20px 0;
+}
+.contact-link a{
+    background-color: transparent;
+    margin: 0px 5px;
+    font-size: 15px;
+}
+/* header site ends */
+
+/* Animation part starts */
+.animation .first-ani{
+    position: absolute;
+    right: 40px;
+    height: 150px;
+    width: 150px;
+    top: 20px ;
+    transition:width 2s, transform 2s;
+}
+.animation .first-ani:hover{
+    width: 200px;
+}
+.description{
+    width: 80%;
+    margin: 0% auto;
+}
+.animation .second-ani{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    left:40px;
+    transition:width 2s,transform 2s;
+}
+.animation .second-ani:hover{
+    width: 200px;
+}
+/* Animation part starts */
+
+/* my profile starts */
+.my-title{
+    padding: 0px 30px ;
+    text-align: left;
+}
+.my-title p,a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+}
+.my-title{
+    padding: 10px 30px ;
+    margin-top: 20px;
+}
+.download{
+    background-color: #010753;
+    color: white;
+    padding: 6px 30px;
+    border-radius: 5px;
+}
+/* my profile ends */
+
+/* skill details start */
+.card{
+    padding: 0px;
+}
+/* skill details end */
+
+/* conrtact information starts */
+form button{
+    padding: 5px 30px;
+    border-radius: 3px;
+    margin: 0px 5px;
+}
+.more-contact-info{
+    position: relative;
+}
+.icon-button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 200px;
+}
+/* conrtact information ends */
+
+/* footer starts */
+.links{
+    margin-top: 50px;
+}
+.links a{
+    display: inline;
+    margin:0 10px;
+    
+}
+/* footer ends */
